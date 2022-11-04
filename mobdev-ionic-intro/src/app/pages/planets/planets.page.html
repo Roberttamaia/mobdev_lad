@@ -6,7 +6,7 @@
 
 <ion-content>
   <ion-list>
-    <ion-item button detail lines="@inset" *ngFor="let planet of (planets | async)?.results" (click)="openDetails(film)">	
+    <ion-item button detail lines="@inset" *ngFor="let planets of (planets | async)?.results" (click)="openDetails(film)">	
       {{ planets.name }}</ion-item>
   </ion-list>
 </ion-content>
